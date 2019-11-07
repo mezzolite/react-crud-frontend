@@ -1,6 +1,8 @@
 # React Practice Project #
 
-**As an software engineering educator, I have noticed that many students have difficulty understanding React app structure, passing state as props, polymorphic components, as well as implementing CRUD functionality in React apps. This project guides React developers-in-training through the process of building an app that requires:**
+**As an software engineering educator, I have noticed that many students have difficulty understanding React app structure, passing state as props, implementing polymorphic components, as well as implementing CRUD functionality in React apps.** 
+
+**This project guides React developers-in-training through the process of building an app that requires:**
 
 * Multiple, hierarchically structured components
 * GET, POST, and DELETE functionality
@@ -22,11 +24,11 @@
 
 * Search for dogs by breed
 
-**Below is the wireframe for Dog Adoption Central**
+**Wireframe for Dog Adoption Central:**
 
 ![App Wireframe Image](/readme-images/dog-adoption-app-wireframe.png)
 
-**Below is a list of components in Dog Adoption Central**
+**Dog Adoption Central Component List**
 
 * App.js
 * Header.js
