@@ -13,10 +13,6 @@
 
 * Add an adoptable dog to the adoptable dogs list by clicking a button
 
-* Remove an adoptable dog from the adoptable dogs list by clicking a button
-
-* Edit information associated with an adoptable dog
-
 * Search for dogs by breed
 
 ### Below is the wireframe for the Dog Adoption app ###
@@ -32,6 +28,16 @@
 * AddDogForm.js
 
 **Based on the wireframe and component list above, draw a component tree to determine the structure of this Dog Adoption app, as well as where state will be held and how props will be passed**
+
+### Try drawing, THEN reveal answer below ###
+
+<details><summary>CLICK ME TO COMPARE APP TREE TO YOUR OWN</summary>
+<p>
+
+![App Structure Tree](/readme-images/app-structure.png)
+
+</p>
+</details>
 
 ### Below are the step-by-step instructions to complete the Dog Adoption app ###
 
