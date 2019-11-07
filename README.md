@@ -1,6 +1,12 @@
 # React CRUD Project #
 
-## As an software engineering educator, I have noticed that many students have difficulty implementing full CRUD functionality in React apps. This blog guides readers through that process ##
+**As an software engineering educator, I have noticed that many students have difficulty understanding app structure, passing state as props, and CRUD functionality in React apps. This blog guides readers through the process of building an app that requires:**
+
+* Multiple, hierarchically structured components
+* GET, POST, and DELETE functionality
+* Form submission
+* Prop drilling
+* Passing props to polymorphic components
 
 ### A dog adoption facility wants you to build a Dog Adoption app that allows users to ###
 
@@ -22,6 +28,8 @@
 ### Below is a list of components in the Dog Adoption app ###
 
 * App.js
+* Header.js
+* SearchBar.js
 * AdoptableDogsContainer.js
 * FavoriteDogsContainer.js
 * DogCard.js
@@ -29,12 +37,12 @@
 
 **Based on the wireframe and component list above, draw a component tree to determine the structure of this Dog Adoption app, as well as where state will be held and how props will be passed**
 
-### Try drawing, THEN reveal answer below ###
+### Try drawing, THEN reveal answer below. Think about where state should be held (highest common component). ###
 
 <details><summary>CLICK ME TO COMPARE APP TREE TO YOUR OWN</summary>
 <p>
 
-![App Structure Tree](/readme-images/app-structure-tree.png)
+![App Structure Tree (header component omitted)](/readme-images/app-structure-tree.png)
 
 </p>
 </details>
