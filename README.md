@@ -6,26 +6,27 @@
 * GET, POST, and DELETE functionality
 * Form submission
 * Prop drilling
-* Passing props to polymorphic components
+* Polymorphic components
 
-### A dog adoption facility wants you to build a Dog Adoption app that allows users to ###
+**A dog adoption facility wants you to build a Dog Adoption app that allows users to:**
 
 * View all dogs available for adoption
 
-* "Favorite" dogs by clicking them and adding them to MyFavoriteDogs list at the top of the page
-  * A particular dog can only be added to favorites one time (no duplicates)
+* "Favorite" dogs by clicking them and adding them to a favorites list component at the top of the page
+  * A particular dog can only be added to the favorites list one time (no duplicates)
+  * Remove dogs from favorites list by clicking on the dog card
 
-* Delete dogs from MyFavoriteDogs list by clicking on the dog
+* Add an adoptable dog to the adoptable dogs list by filling out a form
 
-* Add an adoptable dog to the adoptable dogs list by clicking a button
+* Delete a dog from the adoptable dogs list by clicking a button
 
 * Search for dogs by breed
 
-### Below is the wireframe for the Dog Adoption app ###
+**Below is the wireframe for Dog Adoption Central**
 
 ![App Wireframe Image](/readme-images/dog-adoption-app-wireframe.png)
 
-### Below is a list of components in the Dog Adoption app ###
+**Below is a list of components in Dog Adoption Central**
 
 * App.js
 * Header.js
