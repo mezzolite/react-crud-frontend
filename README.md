@@ -21,7 +21,7 @@
 
 ### Below is the wireframe for the Dog Adoption app ###
 
-![App.js File](/readme-images/dog-app-wireframe.jpg)
+![App Wireframe Image](/readme-images/dog-app-wireframe.png)
 
 ### Below is a list of components in the Dog Adoption app ###
 
