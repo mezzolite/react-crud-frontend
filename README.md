@@ -33,8 +33,8 @@
 * App.js
 * Header.js
 * SearchBar.js
-* AdoptableDogsContainer.js
-* FavoriteDogsContainer.js
+* AdoptableDogs.js
+* FavoriteDogs.js
 * DogCard.js
 * AddDogForm.js
 
