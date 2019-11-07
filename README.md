@@ -79,5 +79,13 @@ Set up all components as functional, put an h1 tag in each of them that contains
 
 *Remember: Functions that CHANGE state have to live where state lives*
 
-Put the name of the app in the Header component and make sure it renders on the screen.
+Put the name of the app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders on the screen.
+
+<details><summary>SHOW CODE</summary>
+<p>
+
+![Header.js Component Code](/readme-images/header-component.png)
+
+</p>
+</details>
 
