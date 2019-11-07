@@ -2,7 +2,9 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <h1>Dog Adoption Central</h1>
+
+        <h1 className="header">Dog Adoption Central</h1>
+
     )
 }
 
