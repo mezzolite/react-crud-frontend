@@ -40,7 +40,7 @@
 
 **Based on the wireframe and component list above, draw a component tree to determine the structure of this Dog Adoption app, as well as where state will be held and how props will be passed**
 
-### Try drawing, THEN reveal answer below. Think about where state should be held (highest common component). ###
+*Try drawing the component tree before viewing the answer below. Think about where state should be held (highest common component).*
 
 <details><summary>CLICK ME TO COMPARE APP TREE TO YOUR OWN</summary>
 <p>
@@ -50,7 +50,7 @@
 </p>
 </details>
 
-### Below are the step-by-step instructions to complete the Dog Adoption app ###
+### Instructions to Complete Dog Adoption Central ###
 
 Refactor App.js from a functional to a class component, then initialize state in the App.js component.
 
