@@ -57,3 +57,17 @@ Refactor App.js from a functional to a class component, then initialize state in
 Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
 
 ![App.js File](/readme-images/app-image.png)
+
+Set up all components as functional, put an h1 tag in each of them that contains the name of the component, then import App.js' child components
+*Complete this step before viewing code below.*
+
+<details><summary>SHOW CODE</summary>
+<p>
+
+![App.js w/ Components Imported](/readme-images/app-components-import.png)
+![Example of One Functional Component w/ h2](/readme-images/example-functional-component.png)
+
+</p>
+</details>
+
+*Remember: Where state lives, the functions that CHANGE state have to live*
