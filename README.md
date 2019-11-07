@@ -34,7 +34,7 @@
 <details><summary>CLICK ME TO COMPARE APP TREE TO YOUR OWN</summary>
 <p>
 
-![App Structure Tree](/readme-images/app-structure.png)
+![App Structure Tree](/readme-images/app-structure-tree.png)
 
 </p>
 </details>
