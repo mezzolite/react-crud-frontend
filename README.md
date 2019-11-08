@@ -117,15 +117,21 @@ In the appropriate components, add code that allows a user to add a dog to the F
 <details><summary>SHOW CODE</summary>
 <p>
 
-1. Add an empty favoriteDogs array to state in the App component.
+<ol>
 
-2. Create an addDog function that adds a dog object to state. 
+<li>Add an empty favoriteDogs array to state in the App component.</li>
+
+<li>Create an addDog function that adds a dog object to state.</li> 
 
 *Remember: Functions that CHANGE state have to live where state lives*
 
-3. Pass the addDog function as props to the AdoptableDogs component, then to the DogCard component. 
+<li>Pass the addDog function as props to the AdoptableDogs component, then to the DogCard component.</li>
 
-4. Pass the favoriteDogs array in state to the FavoriteDogs component.
+<li>Pass the favoriteDogs array in state to the FavoriteDogs component.</li>
+
+<li>Create an array of DogCard components and render them in the FavoriteDogs component.</li>
+
+</ol>
 
 ![App.js](/readme-images/app-component-new-state.png)
 
@@ -134,5 +140,4 @@ In the appropriate components, add code that allows a user to add a dog to the F
 </p>
 </details>
 
-Pass favoriteDogs array to FavoriteDogs component as props. Wrap FavoriteDogs h1 in a div. Give it a className of "dogs". Map through props and return a DogCard component for each favoriteDog object. Reference function or variable that returns or holds map in return, under h1.
 

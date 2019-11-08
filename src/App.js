@@ -22,18 +22,21 @@ class App extends React.Component {
   }
 
   addDog = (dog) => {
-    console.log("add dog clicked", dog)
     this.setState({ favoriteDogs: [...this.state.favoriteDogs, dog] })
   }
 
   render() {
-    console.log("favrote dogs in state", this.state.favoriteDogs)
     return (
       <div className="App">
         <Header />
-        <FavoriteDogs favoriteDogs={this.state.favoriteDogs} />
+        <FavoriteDogs
+          favoriteDogs={this.state.favoriteDogs}
+        />
         <SearchBar />
-        <AdoptableDogs addDog={this.addDog} adoptableDogs={this.state.adoptableDogs} />
+        <AdoptableDogs
+          addDog={this.addDog}
+          adoptableDogs={this.state.adoptableDogs}
+        />
         <AddDogForm />
       </div>
     );
