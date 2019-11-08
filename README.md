@@ -92,6 +92,10 @@ Pass state to AdoptableDogs component as props. Iterate through props in Adoptab
 <details><summary>SHOW CODE</summary>
 <p>
 
+*Passing props from App, to AdoptableDogs, to DogCard is called prop drilling:*
+
+*Data is passed from a component higher in the app hierarchy to a child component further down. It allows access to state at different levels of the component hierarchy.*
+
 ![Pass Props to AdoptableDogs.js](/readme-images/pass-props-adoptabledogs.png)
 ![AdoptableDogs.js w/ Map](/readme-images/adoptable-dogs-component.png)
 
@@ -120,8 +124,6 @@ In the appropriate components, add code that allows a user to add a dog to the F
 *Remember: Functions that CHANGE state have to live where state lives*
 
 3. Pass the addDog function as props to the AdoptableDogs component, then to the DogCard component. 
-
-*This is called prop drilling: Data is passed from a component higher in the component hierarchy to a child component further down. It allows access to state at different levels of the component hierarchy.*
 
 4. Pass the favoriteDogs array in state to the FavoriteDogs component.
 
