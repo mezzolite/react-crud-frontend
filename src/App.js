@@ -11,7 +11,8 @@ const BASE_URL = `https://dogs-backend.herokuapp.com/dogs`
 
 class App extends React.Component {
   state = {
-    adoptableDogs: []
+    adoptableDogs: [],
+    favoriteDogs: []
   }
 
   componentDidMount() {
@@ -20,13 +21,19 @@ class App extends React.Component {
       .then(adoptableDogs => this.setState({ adoptableDogs }))
   }
 
+  addDog = (dog) => {
+    console.log("add dog clicked", dog)
+    this.setState({ favoriteDogs: [...this.state.favoriteDogs, dog] })
+  }
+
   render() {
+    console.log("favrote dogs in state", this.state.favoriteDogs)
     return (
       <div className="App">
         <Header />
         <FavoriteDogs />
         <SearchBar />
-        <AdoptableDogs adoptableDogs={this.state.adoptableDogs} />
+        <AdoptableDogs addDog={this.addDog} adoptableDogs={this.state.adoptableDogs} />
         <AddDogForm />
       </div>
     );

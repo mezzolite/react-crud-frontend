@@ -1,6 +1,6 @@
 # React Practice Project #
 
-**As an software engineering educator, I have noticed that many students have difficulty understanding React app structure, passing state as props, implementing polymorphic components, as well as implementing CRUD functionality in React apps.** 
+**As a software engineering educator, I have noticed that many students have difficulty understanding React app structure, passing state as props, implementing polymorphic components, as well as implementing CRUD functionality in React apps.** 
 
 **This project guides React developers-in-training through the process of building an app that requires:**
 
@@ -77,8 +77,6 @@ Set up all components as functional, put an h1 tag in each of them that contains
 </p>
 </details>
 
-*Remember: Functions that CHANGE state have to live where state lives*
-
 Put the name of the app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders on the screen.
 
 <details><summary>SHOW CODE</summary>
@@ -90,6 +88,7 @@ Put the name of the app in an h1 tag in the Header component. Give it a classNam
 </details>
 
 Pass state to AdoptableDogs component as props. Iterate through props in AdoptableDogs component to return an array of DogCard components. Give each dog card a key and a dog prop. Render DogCards in the Adoptable Dogs section in the browser.
+
 <details><summary>SHOW CODE</summary>
 <p>
 
@@ -99,7 +98,37 @@ Pass state to AdoptableDogs component as props. Iterate through props in Adoptab
 </p>
 </details>
 
+Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
 
+<details><summary>SHOW CODE</summary>
+<p>
+
+![Pass Props to AdoptableDogs.js](/readme-images/dog-card-component.png)
+
+</p>
+</details>
+
+In the appropriate components, add code that allows a user to add a dog to the FavoriteDogs component when a DogCard is clicked.
+
+<details><summary>SHOW CODE</summary>
+<p>
+
+1. Add an empty favoriteDogs array to state in the App component.
+
+2. Create an addDog function that adds a dog object to state. 
+
+*Remember: Functions that CHANGE state have to live where state lives*
+
+3. Pass the addDog function as props to the AdoptableDogs component, then to the DogCard component. 
+
+*This is called prop drilling: Data is passed from a component higher in the component hierarchy to a child component further down. It allows access to state at different levels of the component hierarchy.*
+
+4. Pass the favoriteDogs array in state to the FavoriteDogs component.
+
+![Pass Props to AdoptableDogs.js](/readme-images/dog-card-component.png)
+
+</p>
+</details>
 
 Pass favoriteDogs array to FavoriteDogs component as props. Wrap FavoriteDogs h1 in a div. Give it a className of "favorite-dogs". Map through props and return a DogCard component for each favoriteDog object. Reference function or variable that returns or holds map in return, under h1.
 

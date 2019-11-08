@@ -16,27 +16,51 @@
   height: auto;
   width: 90%;
   padding: 1rem;
-  background-color: #437394;
+  background-color: #eaf1f8;
+  box-shadow: 5px 5px 4px 5px #888888;
+}
+
+.adoptable-dogs-container {
+  background-color: #eaf1f8;
   box-shadow: 5px 5px 4px 5px #888888;
 }
 
 .adoptable-dogs {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   height: auto;
   width: 90%;
   padding: 1rem;
-  background-color: #D3B399;
-  box-shadow: 5px 5px 4px 5px #888888;
+  
 }
 
 .dog-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 50%;
+  background-color: #437394;
+}
+
+img {
+  height: 10rem;
+  width: 10rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .dog-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.dog-specs {
+.dog-specs, .dog-specs p, .dog-specs h4 {
   padding: 2px 16px;
 }
+
+/* <div className="dog-card">
+            <img src={props.dog.image} alt={props.dog.name} />
+            <div className="dog-specs">
+                <h4><b>{props.dog.name}</b></h4>
+                <p>{props.dog.breed}</p>
+            </div>
+        </div> */
