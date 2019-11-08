@@ -21,8 +21,13 @@ class App extends React.Component {
       .then(adoptableDogs => this.setState({ adoptableDogs }))
   }
 
-  addDog = (dog) => {
-    this.setState({ favoriteDogs: [...this.state.favoriteDogs, dog] })
+  addDog = dog => {
+    const dogIds = this.state.favoriteDogs.map(favorite => favorite.id)
+    if (!dogIds.includes(dog.id)) {
+      this.setState({
+        favoriteDogs: [...this.state.favoriteDogs, dog]
+      })
+    }
   }
 
   render() {

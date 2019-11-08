@@ -139,3 +139,54 @@ In the appropriate components, add code that allows a user to add a dog to the F
 </details>
 
 
+Ensure that once a dog is added to the FavoriteDogs component, it cannot be added again.
+
+<details><summary>SHOW CODE</summary>
+<p>
+
+![Pass Props to AdoptableDogs.js](/readme-images/dog-card-component.png)
+
+</p>
+</details>
+
+In the appropriate components, add code that allows a user to add a dog to the FavoriteDogs component when a DogCard is clicked.
+
+<details><summary>SHOW CODE</summary>
+<p>
+
+![App.js](/readme-images/add-dog-function.png)
+
+
+</p>
+</details>
+
+
+
+[[[[[]]]]]
+In the appropriate components, add code that allows a user to remove a dog to the FavoriteDogs component when a DogCard is clicked.
+
+<details><summary>SHOW CODE</summary>
+<p>
+
+<ol>
+
+<li>Create a removeDog function that removes a selected dog from the favoriteDogs array in state.</li>
+
+<li>Create an addDog function that adds a dog object to state.</li> 
+
+*Remember: Functions that CHANGE state have to live where state lives*
+
+<li>Pass the addDog function as props to the AdoptableDogs component, then to the DogCard component.</li>
+
+<li>Pass the favoriteDogs array in state to the FavoriteDogs component.</li>
+
+<li>Create an array of DogCard components and render them in the FavoriteDogs component.</li>
+
+</ol>
+
+![App.js](/readme-images/app-component-new-state.png)
+
+![FavoriteDogs.js](/readme-images/favorite-dogs-with-props.png)
+
+</p>
+</details>
