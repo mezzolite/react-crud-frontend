@@ -127,7 +127,9 @@ In the appropriate components, add code that allows a user to add a dog to the F
 
 4. Pass the favoriteDogs array in state to the FavoriteDogs component.
 
-![Pass Props to AdoptableDogs.js](/readme-images/dog-card-component.png)
+![App.js](/readme-images/app-component-new-state.png)
+
+![FavoriteDogs.js](/readme-images/favorite-dogs-with-props.png)
 
 </p>
 </details>
