@@ -8,7 +8,7 @@
 * GET, POST, and DELETE functionality
 * Form submission
 * Prop drilling
-* Polymorphic components
+* Component reusability
 
 **A dog adoption facility wants you to build a Dog Adoption app that allows users to:**
 
@@ -18,11 +18,11 @@
   * A particular dog can only be added to the favorites list one time (no duplicates)
   * Remove dogs from favorites list by clicking on the dog card
 
+* Search for dogs by breed
+
 * Add an adoptable dog to the adoptable dogs list by filling out a form
 
 * Delete a dog from the adoptable dogs list by clicking a button
-
-* Search for dogs by breed
 
 **Wireframe for Dog Adoption Central:**
 
@@ -173,37 +173,26 @@ Add the following functionality: Clicking on a DogCard in the FavoriteDogs remov
 </p>
 </details>
 
-
-
-
-
-
-
-[[[[[]]]]]
-In the appropriate components, add code that allows a user to remove a dog to the FavoriteDogs component when a DogCard is clicked.
+Add functionality to SearchBar component: Typing in a form allows user to search by breed.
 
 <details><summary>SHOW CODE</summary>
 <p>
 
 <ol>
 
-<li>Create a removeDog function that removes a selected dog from the favoriteDogs array in state.</li>
+<li>Add search input to SearchBar component that searches dogs by breed.</li>
 
-<li>Create an addDog function that adds a dog object to state.</li> 
+<li>Write search function in App component</li> 
 
-*Remember: Functions that CHANGE state have to live where state lives*
+<li>Dogs that match breed search render in AdoptableDogs component.</li> 
 
-<li>Pass the addDog function as props to the AdoptableDogs component, then to the DogCard component.</li>
-
-<li>Pass the favoriteDogs array in state to the FavoriteDogs component.</li>
-
-<li>Create an array of DogCard components and render them in the FavoriteDogs component.</li>
+<li>Pass dogAction down to DogCard. (Change props names in AdoptableDogs and DogCard components as needed.)</li> 
 
 </ol>
 
-![App.js](/readme-images/app-component-new-state.png)
+![App.js](/readme-images/app-with-remove.png)
 
-![FavoriteDogs.js](/readme-images/favorite-dogs-with-props.png)
+![App.js](/readme-images/adoptable-dogs-new-props.png)
 
 </p>
 </details>

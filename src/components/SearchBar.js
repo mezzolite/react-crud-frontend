@@ -1,8 +1,11 @@
 import React from 'react'
 
-const SearchBar = () => {
+const SearchBar = (props) => {
     return (
-        <h1>SearchBar</h1>
+        <div>
+            <h1>Search Dogs by Breed</h1>
+            <input type="text" placeholder="Search.." />
+        </div>
     )
 }
 
