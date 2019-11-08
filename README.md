@@ -62,8 +62,6 @@ Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in s
 <p>![App.js File](/readme-images/app-image.png)</p>
 </details>
 
-
-
 Set up all components as functional, put an h1 tag in each of them that contains the name of the component, then import App.js' child components
 
 *Complete this step before viewing code below.*
