@@ -30,16 +30,26 @@ class App extends React.Component {
     }
   }
 
+  removeDog = dog => {
+    const newFavorites = this.state.favoriteDogs.filter(favorite => favorite.id !== dog.id)
+    this.setState({
+      favoriteDogs: newFavorites
+    })
+  }
+
+
+
   render() {
     return (
       <div className="App">
         <Header />
         <FavoriteDogs
+          dogAction={this.removeDog}
           favoriteDogs={this.state.favoriteDogs}
         />
         <SearchBar />
         <AdoptableDogs
-          addDog={this.addDog}
+          dogAction={this.addDog}
           adoptableDogs={this.state.adoptableDogs}
         />
         <AddDogForm />

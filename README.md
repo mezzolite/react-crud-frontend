@@ -110,7 +110,7 @@ Create an HTML card in the DogCard component. It should be wrapped by a div with
 </p>
 </details>
 
-In the appropriate components, add code that allows a user to add a dog to the FavoriteDogs component when a DogCard is clicked.
+Add the following functionality: Clicking on a DogCard in the AdoptableDogs component adds it to FavoriteDogs component.
 
 <details><summary>SHOW CODE</summary>
 <p>
@@ -149,16 +149,33 @@ Ensure that once a dog is added to the FavoriteDogs component, it cannot be adde
 </p>
 </details>
 
-In the appropriate components, add code that allows a user to add a dog to the FavoriteDogs component when a DogCard is clicked.
+Add the following functionality: Clicking on a DogCard in the FavoriteDogs removes it from that component.
 
 <details><summary>SHOW CODE</summary>
 <p>
 
-![App.js](/readme-images/add-dog-function.png)
+<ol>
 
+<li>Write a removeDog function that removes the selected dog from the favoriteDogs array in state.</li>
+
+<li>Change the name of AdoptableDogs component's addDog prop to dogAction.</li> 
+
+<li>Pass removeDog function as a prop called dogAction to the FavoriteDogs component.</li> 
+
+<li>Pass dogAction down to DogCard. (Change props names in AdoptableDogs and DogCard components as needed.)</li> 
+
+</ol>
+
+![App.js](/readme-images/app-with-remove.png)
+
+![App.js](/readme-images/adoptable-dogs-new-props.png)
 
 </p>
 </details>
+
+
+
+
 
 
 

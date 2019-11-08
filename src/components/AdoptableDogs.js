@@ -4,7 +4,7 @@ import DogCard from './DogCard'
 const AdoptableDogs = (props) => {
 
     const adoptableDogs = props.adoptableDogs.map(dog => {
-        return <DogCard addDog={props.addDog} key={dog.id} dog={dog} />
+        return <DogCard dogAction={props.dogAction} key={dog.id} dog={dog} />
     })
 
     return (

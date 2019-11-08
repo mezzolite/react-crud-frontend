@@ -2,7 +2,7 @@ import React from 'react'
 
 const DogCard = (props) => {
     const handleClick = () => {
-        props.addDog(props.dog)
+        props.dogAction(props.dog)
     }
 
     return (
