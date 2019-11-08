@@ -31,7 +31,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <FavoriteDogs />
+        <FavoriteDogs favoriteDogs={this.state.favoriteDogs} />
         <SearchBar />
         <AdoptableDogs addDog={this.addDog} adoptableDogs={this.state.adoptableDogs} />
         <AddDogForm />

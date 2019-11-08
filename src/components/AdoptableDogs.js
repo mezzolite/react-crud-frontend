@@ -8,7 +8,7 @@ const AdoptableDogs = (props) => {
     })
 
     return (
-        <div className="adoptable-dogs-container">
+        <div className="dogs">
             <h1 className="header">Adoptable Dogs</h1>
             <div className="adoptable-dogs">
                 {adoptableDogs}

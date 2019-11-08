@@ -132,5 +132,5 @@ In the appropriate components, add code that allows a user to add a dog to the F
 </p>
 </details>
 
-Pass favoriteDogs array to FavoriteDogs component as props. Wrap FavoriteDogs h1 in a div. Give it a className of "favorite-dogs". Map through props and return a DogCard component for each favoriteDog object. Reference function or variable that returns or holds map in return, under h1.
+Pass favoriteDogs array to FavoriteDogs component as props. Wrap FavoriteDogs h1 in a div. Give it a className of "dogs". Map through props and return a DogCard component for each favoriteDog object. Reference function or variable that returns or holds map in return, under h1.
 
