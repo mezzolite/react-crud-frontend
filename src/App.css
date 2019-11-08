@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 * {
-  margin: 0;
-  padding: 0;
+  margin: auto;
   font-family: 'Nunito', sans-serif;
   text-align: center;
+
 }
 
 .header {
   padding: 2rem;
   text-decoration: underline;
+}
+
+
+.favorite-dogs {
+  height: auto;
+  width: 90%;
+  padding: 1rem;
+  background-color: #437394;
+  box-shadow: 5px 5px 4px 5px #888888;
+}
+
+.adoptable-dogs {
+  height: auto;
+  width: 90%;
+  padding: 1rem;
+  background-color: #D3B399;
+  box-shadow: 5px 5px 4px 5px #888888;
 }

@@ -11,23 +11,22 @@ const BASE_URL = `https://dogs-backend.herokuapp.com/dogs`
 
 class App extends React.Component {
   state = {
-    dogs: []
+    adoptableDogs: []
   }
 
   componentDidMount() {
     fetch(BASE_URL)
       .then(response => response.json())
-      .then(dogs => this.setState({ dogs }))
+      .then(adoptableDogs => this.setState({ adoptableDogs }))
   }
 
   render() {
-    console.log(this.state.dogs)
     return (
       <div className="App">
         <Header />
         <FavoriteDogs />
         <SearchBar />
-        <AdoptableDogs />
+        <AdoptableDogs adoptableDogs={this.state.adoptableDogs} />
         <AddDogForm />
       </div>
     );

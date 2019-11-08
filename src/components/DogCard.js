@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DogCard = () => {
+const DogCard = (props) => {
     return (
         <h1>DogCard</h1>
     )

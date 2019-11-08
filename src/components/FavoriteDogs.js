@@ -2,7 +2,9 @@ import React from 'react'
 
 const FavoriteDogs = () => {
     return (
-        <h1>FavoriteDogs</h1>
+        <div className="favorite-dogs">
+            <h1 className="header">FavoriteDogs</h1>
+        </div>
     )
 }
 

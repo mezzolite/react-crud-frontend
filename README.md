@@ -89,3 +89,17 @@ Put the name of the app in an h1 tag in the Header component. Give it a classNam
 </p>
 </details>
 
+Pass state to AdoptableDogs component as props. Iterate through props in AdoptableDogs component to return an array of DogCard components. Give each dog card a key and a dog prop. Render DogCards in the Adoptable Dogs section in the browser.
+<details><summary>SHOW CODE</summary>
+<p>
+
+![Pass Props to AdoptableDogs.js](/readme-images/pass-props-adoptabledogs.png)
+![AdoptableDogs.js w/ Map](/readme-images/adoptable-dogs-component.png)
+
+</p>
+</details>
+
+
+
+Pass favoriteDogs array to FavoriteDogs component as props. Wrap FavoriteDogs h1 in a div. Give it a className of "favorite-dogs". Map through props and return a DogCard component for each favoriteDog object. Reference function or variable that returns or holds map in return, under h1.
+
