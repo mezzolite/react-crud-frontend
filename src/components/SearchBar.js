@@ -1,11 +1,20 @@
-import React from 'react'
+
+import React from "react"
 
 const SearchBar = (props) => {
+    const updateSearchTerm = event => {
+        props.updateSearchTerm(event.target.value)
+    }
+
     return (
-        <div>
-            <h1>Search Dogs by Breed</h1>
-            <input type="text" placeholder="Search.." />
-        </div>
+        <form className="bagel-filter">
+            <input
+                type="text"
+                value={props.searchTerm}
+                placeholder="Find Adoptable Dog"
+                onChange={updateSearchTerm}
+            />
+        </form>
     )
 }
 

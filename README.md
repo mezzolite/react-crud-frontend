@@ -40,8 +40,6 @@
 
 **Based on the wireframe and component list above, draw a component tree to determine the structure of this Dog Adoption app, as well as where state will be held and how props will be passed**
 
-*Try drawing the component tree before viewing the answer below. Think about where state should be held (highest common component).*
-
 <details><summary>CLICK ME TO COMPARE APP TREE TO YOUR OWN</summary>
 <p>
 
@@ -50,7 +48,7 @@
 </p>
 </details>
 
-### Instructions to Complete Dog Adoption Central ###
+## Instructions to Complete Dog Adoption Central ##
 
 Refactor App.js from a functional to a class component, then initialize state in the App.js component.
 
@@ -87,7 +85,8 @@ Put the name of the app in an h1 tag in the Header component. Give it a classNam
 
 Pass state to AdoptableDogs component as props. Iterate through props in AdoptableDogs component to return an array of DogCard components. Give each dog card a key and a dog prop. Render DogCards in the Adoptable Dogs section in the browser.
 
-<details><summary>SHOW CODE</summary>
+<details>
+<summary>SHOW CODE</summary>
 <p>
 
 *Passing props from App, to AdoptableDogs, to DogCard is called prop drilling:*
@@ -102,7 +101,8 @@ Pass state to AdoptableDogs component as props. Iterate through props in Adoptab
 
 Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
 
-<details><summary>SHOW CODE</summary>
+<details>
+<summary>SHOW CODE</summary>
 <p>
 
 ![Pass Props to AdoptableDogs.js](/readme-images/dog-card-component.png)
@@ -112,7 +112,8 @@ Create an HTML card in the DogCard component. It should be wrapped by a div with
 
 Add the following functionality: Clicking on a DogCard in the AdoptableDogs component adds it to FavoriteDogs component.
 
-<details><summary>SHOW CODE</summary>
+<details>
+<summary>SHOW CODE</summary>
 <p>
 
 <ol>
@@ -138,7 +139,6 @@ Add the following functionality: Clicking on a DogCard in the AdoptableDogs comp
 </p>
 </details>
 
-
 Ensure that once a dog is added to the FavoriteDogs component, it cannot be added again.
 
 <details><summary>SHOW CODE</summary>
@@ -151,8 +151,11 @@ Ensure that once a dog is added to the FavoriteDogs component, it cannot be adde
 
 Add the following functionality: Clicking on a DogCard in the FavoriteDogs removes it from that component.
 
-<details><summary>SHOW CODE</summary>
+<details>
+<summary>SHOW CODE</summary>
 <p>
+
+*Did you know that you can give two different props the same name even if they reference different functions!? This increases the reusability of components!*
 
 <ol>
 
@@ -175,18 +178,36 @@ Add the following functionality: Clicking on a DogCard in the FavoriteDogs remov
 
 Add functionality to SearchBar component: Typing in a form allows user to search by breed.
 
-<details><summary>SHOW CODE</summary>
+<details>
+<summary>SHOW CODE</summary>
 <p>
 
 <ol>
 
-<li>Add search input to SearchBar component that searches dogs by breed.</li>
+<li>
+In the App component, add searchTerm to state and assign it to an empty string. Pass it to the SearchBar component as props.
+</li>
 
-<li>Write search function in App component</li> 
+<li>
+In the App component, write a function called updateSearchTerm that takes in a searchTerm and sets the searchTerm in state.
+*Do you remember why this function belongs here and not in another component?*
+</li>
 
-<li>Dogs that match breed search render in AdoptableDogs component.</li> 
+<li>Pass the updateSearchTerm function to the SearchBar component as props.</li>
 
-<li>Pass dogAction down to DogCard. (Change props names in AdoptableDogs and DogCard components as needed.)</li> 
+<li>Add a search input to SearchBar component.</li>
+
+<li>Give input a value of the searchTerm previously passed as props.</li>
+
+<li>Give input a placeholder of "Find Adoptable Dog".</li>
+
+<li>Add an onChange event listener to the input that references a function called "updateSearchTerm".</li>
+
+<li>In the SearchBar component, write the updateSearchTerm function that references the updateSearchTerm function written in the App component. It should take in event.target.value as its argument.</li>
+
+<li>Create a filteredDogs function. (You determine where it should live.) Based on the searchTerm in state, this funciton should filter dogs by breed, name, and age.</li>
+
+ <li>Update adoptableDogs props sent to AdoptableDogs component to reference the filteredDogs function.</li>
 
 </ol>
 

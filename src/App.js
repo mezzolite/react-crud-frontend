@@ -12,7 +12,8 @@ const BASE_URL = `https://dogs-backend.herokuapp.com/dogs`
 class App extends React.Component {
   state = {
     adoptableDogs: [],
-    favoriteDogs: []
+    favoriteDogs: [],
+    searchTerm: ""
   }
 
   componentDidMount() {
@@ -37,7 +38,28 @@ class App extends React.Component {
     })
   }
 
+  updateSearchTerm = searchTerm => {
+    this.setState({ searchTerm })
+  }
+
+  filteredDogs = () => {
+    return this.state.adoptableDogs.filter(dog => {
+      return (dog.breed
+        .toLowerCase()
+        .includes(this.state.searchTerm)
+      ) || (dog.name
+        .toLowerCase()
+        .includes(this.state.searchTerm)
+        )
+        || (dog.age
+          .toString()
+          .includes(this.state.searchTerm)
+        )
+    })
+  }
+
   render() {
+    console.log("state", this.state.adoptableDogs)
     return (
       <div className="App">
         <Header />
@@ -45,10 +67,12 @@ class App extends React.Component {
           dogAction={this.removeDog}
           favoriteDogs={this.state.favoriteDogs}
         />
-        <SearchBar />
+        <SearchBar
+          searchTerm={this.state.searchTerm}
+          updateSearchTerm={this.updateSearchTerm} />
         <AdoptableDogs
           dogAction={this.addDog}
-          adoptableDogs={this.state.adoptableDogs}
+          adoptableDogs={this.filteredDogs()}
         />
         <AddDogForm />
       </div>
