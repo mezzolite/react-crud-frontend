@@ -68,17 +68,9 @@ img {
 }
 
 .dog-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px 0 black;
 }
 
 .dog-specs, .dog-specs p, .dog-specs h4 {
   padding: 2px 16px;
 }
-
-/* <div className="dog-card">
-            <img src={props.dog.image} alt={props.dog.name} />
-            <div className="dog-specs">
-                <h4><b>{props.dog.name}</b></h4>
-                <p>{props.dog.breed}</p>
-            </div>
-        </div> */

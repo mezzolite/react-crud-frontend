@@ -13,7 +13,8 @@ const DogCard = (props) => {
             <img src={props.dog.image} alt={props.dog.name} />
             <div className="dog-specs">
                 <h4><b>{props.dog.name}</b></h4>
-                <p>{props.dog.breed}</p>
+                <p>Breed: {props.dog.breed}</p>
+                <p>Age: {props.dog.age}</p>
             </div>
         </div>
 

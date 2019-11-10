@@ -218,3 +218,18 @@ In the App component, write a function called updateSearchTerm that takes in a s
 
 </p>
 </details>
+
+Create a form in AddDogForm that allows a user to add an adoptable dog to the list. It should have three inputs: one for a dog's name, one for a dog's breed, and one for a dog's age.
+
+Refactor the AddDogForm component to hold a newDog object in state.
+
+Give each input a value that references corresponding information AddDogForm state.
+
+<details>
+<summary>SHOW CODE</summary>
+<p>
+
+![AddDogFOrm.js](/readme-images/add-dog-form-1.png)
+
+</p>
+</details>
