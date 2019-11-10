@@ -54,7 +54,7 @@ Refactor App.js from a functional to a class component, then initialize state in
 
 Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
 
-*Attempt to complete this and all step before viewing code below.*
+*Complete this and all step before viewing code below.*
 
 <details>
 <summary>SHOW CODE</summary>

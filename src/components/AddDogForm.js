@@ -11,13 +11,16 @@ class AddDogForm extends Component {
 
     render() {
         return (
-            <form className="add-dog-form" >
+            <form className="add-dog-form"
+            // onSubmit={this.submitHandler}
+            >
                 <input
                     name="name"
                     type="text"
                     required
                     value={this.state.newDog.name}
                     placeholder="Name"
+                // onChange={this.handleChange}
                 />
                 <input
                     name="breed"
@@ -25,6 +28,7 @@ class AddDogForm extends Component {
                     required
                     value={this.state.newDog.breed}
                     placeholder="Breed"
+                // onChange={this.handleChange}
                 />
                 <input
                     name="age"
@@ -32,9 +36,12 @@ class AddDogForm extends Component {
                     required
                     value={this.state.newDog.age}
                     placeholder="Age"
+                // onChange={this.handleChange}
                 />
 
-                <input type="submit" />
+                <input type="submit"
+                // value={this.props.submitLabel}
+                />
             </form>
         )
     }
