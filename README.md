@@ -54,12 +54,13 @@ Refactor App.js from a functional to a class component, then initialize state in
 
 Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
 
-*Complete this step before viewing code below.*
+*Attempt to complete this and all step before viewing code below.*
 
-<details><summary>SHOW CODE</summary>
+<details>
+<summary>SHOW CODE</summary>
 <p>
 
-![App.js File](/readme-images/app-image.png)
+![App.js w/ GET request](/readme-images/app-image.png)
 
 </p>
 </details>
