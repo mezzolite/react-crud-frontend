@@ -29,8 +29,6 @@ class AddDogForm extends Component {
                 <input
                     name="age"
                     type="number"
-                    min="1"
-                    max="10"
                     required
                     value={this.state.newDog.age}
                     placeholder="Age"
