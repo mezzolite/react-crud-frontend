@@ -2,6 +2,7 @@
 * {
   margin: auto;
   font-family: 'Nunito', sans-serif;
+  font-size: 30px;
   text-align: center;
 
 }
@@ -16,13 +17,29 @@
   height: auto;
   width: 90%;
   padding: 1rem;
+  margin: 3rem;
   background-color: #eaf1f8;
   box-shadow: 5px 5px 4px 5px #888888;
+}
+
+.dog-filter {
+  height: auto;
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+  background-color: #eaf1f8;
+}
+
+.dog-filter input {
+  height: 50px;
+  width: 100%;
+  font-size: 40px;
 }
 
 .dogs{
   background-color: #eaf1f8;
   box-shadow: 5px 5px 4px 5px #888888;
+  margin: 3rem;
 }
 
 .adoptable-dogs {
@@ -39,13 +56,14 @@
   transition: 0.3s;
   padding: 2rem;
   margin: 2rem auto;
-  width: 50%;
+  width: 70%;
   background-color: #437394;
 }
 
 img {
   height: 10rem;
   width: 10rem;
+  margin: auto;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 

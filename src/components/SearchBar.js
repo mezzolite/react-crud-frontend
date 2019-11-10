@@ -7,7 +7,7 @@ const SearchBar = (props) => {
     }
 
     return (
-        <form className="bagel-filter">
+        <form className="dog-filter">
             <input
                 type="text"
                 value={props.searchTerm}
