@@ -203,7 +203,8 @@ In the App component, write a function called updateSearchTerm that takes in a s
 
 <li>Add an onChange event listener to the input that references a function called "updateSearchTerm".</li>
 
-<li>In the SearchBar component, write the updateSearchTerm function that references the updateSearchTerm function written in the App component. It should take in event.target.value as its argument.</li>
+<li>In the SearchBar component, write the updateSearchTerm function that references the updateSearchTerm function written in the App component. It should take in event.target.value as its argument.
+</li>
 
 <li>Create a filteredDogs function. (You determine where it should live.) Based on the searchTerm in state, this funciton should filter dogs by breed, name, and age.</li>
 
@@ -211,9 +212,9 @@ In the App component, write a function called updateSearchTerm that takes in a s
 
 </ol>
 
-![App.js](/readme-images/app-with-remove.png)
+![SearchBar.js](/readme-images/search-bar.png)
 
-![App.js](/readme-images/adoptable-dogs-new-props.png)
+![App.js](/readme-images/app-with-search.png)
 
 </p>
 </details>
