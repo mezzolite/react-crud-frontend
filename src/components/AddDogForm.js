@@ -11,7 +11,7 @@ class AddDogForm extends Component {
 
     render() {
         return (
-            <form className="bagel-form" onSubmit={this.submitHandler} >
+            <form className="add-dog-form" >
                 <input
                     name="name"
                     type="text"
@@ -36,7 +36,7 @@ class AddDogForm extends Component {
                     placeholder="Age"
                 />
 
-                <input type="submit" value={this.props.submitLabel} />
+                <input type="submit" />
             </form>
         )
     }
