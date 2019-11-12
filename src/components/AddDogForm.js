@@ -5,14 +5,34 @@ class AddDogForm extends Component {
         newDog: {
             name: "",
             breed: "",
-            age: null
-        },
+            age: undefined
+        }
+    }
+    submitHandler = event => {
+        event.preventDefault()
+        const { name, breed, age } = this.state.newDog
+
+        this.props.submitHandler({ name, breed, age })
+
+        this.setState({
+            newDog: {
+                name: "",
+                breed: "",
+                age: null
+            }
+        })
+    }
+
+    handleChange = event => {
+        const newDog = this.state.newDog
+        newDog[event.target.name] = event.target.value
+        this.setState({ newDog })
     }
 
     render() {
         return (
             <form className="add-dog-form"
-            // onSubmit={this.submitHandler}
+                onSubmit={this.submitHandler}
             >
                 <input
                     name="name"
@@ -20,7 +40,7 @@ class AddDogForm extends Component {
                     required
                     value={this.state.newDog.name}
                     placeholder="Name"
-                // onChange={this.handleChange}
+                    onChange={this.handleChange}
                 />
                 <input
                     name="breed"
@@ -28,7 +48,7 @@ class AddDogForm extends Component {
                     required
                     value={this.state.newDog.breed}
                     placeholder="Breed"
-                // onChange={this.handleChange}
+                    onChange={this.handleChange}
                 />
                 <input
                     name="age"
@@ -36,11 +56,11 @@ class AddDogForm extends Component {
                     required
                     value={this.state.newDog.age}
                     placeholder="Age"
-                // onChange={this.handleChange}
+                    onChange={this.handleChange}
                 />
 
                 <input type="submit"
-                // value={this.props.submitLabel}
+                    value="Submit"
                 />
             </form>
         )

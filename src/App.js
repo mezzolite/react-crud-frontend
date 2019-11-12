@@ -58,6 +58,22 @@ class App extends React.Component {
     })
   }
 
+  addAdoptableDog = dog => {
+    fetch(`${BASE_URL}/dogs`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dog),
+    })
+    .then(response => response.json())
+      .then(dog => {
+        this.setState({
+          adoptableDogs: [...this.state.adoptableDogs, dog]
+        })
+      })
+  }
+
   render() {
     console.log("state", this.state.adoptableDogs)
     return (
@@ -74,7 +90,9 @@ class App extends React.Component {
           dogAction={this.addDog}
           adoptableDogs={this.filteredDogs()}
         />
-        <AddDogForm />
+        <AddDogForm
+          addAdoptableDog={this.addAdoptableDog}
+        />
       </div>
     );
   }

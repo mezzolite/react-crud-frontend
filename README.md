@@ -54,7 +54,7 @@ Refactor App.js from a functional to a class component, then initialize state in
 
 Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
 
-*Complete this and all step before viewing code below.*
+*Complete this and all steps before viewing code below.*
 
 <details>
 <summary>SHOW CODE</summary>
@@ -65,9 +65,21 @@ Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in s
 </p>
 </details>
 
+*Why is the GET request inside the ComponentDidMount() lifecycle method? Use React docs and google to answer this question.*
+
+<details>
+<summary>SHOW ANSWER</summary>
+<p>
+componentDidMount is called once the component has been rendered in the browser. Fetching data within this lifecycle method ensure that data will not be loaded until after the initial render. 
+
+
+NEEDS EDITING!!!!! 
+</p>
+</details>
+
 Set up all components as functional, put an h1 tag in each of them that contains the name of the component, then import App.js' child components
 
-*Complete this step before viewing code below.*
+*Complete this and all steps before viewing code below.*
 
 <details><summary>SHOW CODE</summary>
 <p>
@@ -228,6 +240,8 @@ Create a form in AddDogForm that allows a user to add an adoptable dog to the li
 
 Refactor the AddDogForm component to hold a newDog object in state.
 
+Add onChange handlers to the AddDogForm component inputs that update local state.
+
 Give first three inputs a value that references corresponding information AddDogForm state. 
 
 <details>
@@ -238,3 +252,31 @@ Give first three inputs a value that references corresponding information AddDog
 
 </p>
 </details>
+
+In the appropriate component, add an addAdoptableDog function that POSTs form data to the backend. Pass as props to the appropriate component.
+
+Pass addAdoptableDog function as props to the appropriate component.
+
+Add logic to addAdoptableDog function that pessimistically renders the new adoptable dog to the adoptable dog list.
+
+<details>
+<summary>What is *pessimistic rendering*?</summary>
+<p>
+
+Pessimistic rendering: The user interface (UI) updates AFTER the database is updated. In this case, we POST the new dog, then setState with the newly added dog so it displays in the UI.
+
+The opposite is *optimistic rendering*, which renders the page with updated information BEFORE you update the database.
+
+</p>
+</details>
+
+Add an onSubmit handler to the AddDogForm component. The onSubmit should reference a submitHandler function that calls the addAdoptableDog function, then resets state to its original empty values.
+
+<details>
+<summary>Why do we need event.preventDefault() in the submitHandler function?</summary>
+<p>
+This prevents the default submit action of reloading the webpage.
+</p>
+</details>
+
+
