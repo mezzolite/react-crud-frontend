@@ -249,7 +249,7 @@ Give first three inputs a value that references corresponding information AddDog
 <summary>What is a controlled form?</summary>
 <p>
 
-Controlled forms: Input values are set to state values, then updated via events. For controlled inputs you will need a corresponding state and a method to update that state with changes. For more information: <https://medium.com/byte-sized-react/controlled-forms-in-react-68e59362a119>
+Controlled forms: Input values are set to state values, then updated via events. For controlled inputs you will need a corresponding value in state and a function that updates state when inputs change. For more information: <https://medium.com/byte-sized-react/controlled-forms-in-react-68e59362a119>
 
 </p>
 </details>
