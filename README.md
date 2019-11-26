@@ -50,9 +50,9 @@
 
 ## Instructions to Complete Dog Adoption Central ##
 
-Refactor App.js from a functional to a class component, then initialize state in the App.js component.
+1. Refactor App.js from a functional to a class component, then initialize state in the App.js component.
 
-Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
+1. Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
 
 *Do not view hidden code until you have completed the corresponding step(s).*
 
@@ -76,7 +76,7 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-Set up all components as functional, put an h1 tag in each of them that contains the name of the component, then import App.js' child components
+1. Set up all components as functional, put an h1 tag in each of them that contains the name of the component, then import App.js' child components
 
 <details><summary>SHOW CODE</summary>
 <p>
@@ -87,7 +87,7 @@ Set up all components as functional, put an h1 tag in each of them that contains
 </p>
 </details>
 
-Put the name of the app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders on the screen.
+1. Put the name of the app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders on the screen.
 
 <details><summary>SHOW CODE</summary>
 <p>
@@ -97,7 +97,7 @@ Put the name of the app in an h1 tag in the Header component. Give it a classNam
 </p>
 </details>
 
-Pass state to AdoptableDogs component as props. Iterate through props in AdoptableDogs component to return an array of DogCard components. Give each dog card a key and a dog prop. Render DogCards in the Adoptable Dogs section in the browser.
+1. Pass state to AdoptableDogs component as props. Iterate through props in AdoptableDogs component to return an array of DogCard components. Give each dog card a key and a dog prop. Render DogCards in the Adoptable Dogs section in the browser.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -113,7 +113,7 @@ Pass state to AdoptableDogs component as props. Iterate through props in Adoptab
 </p>
 </details>
 
-Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
+1. Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -124,7 +124,7 @@ Create an HTML card in the DogCard component. It should be wrapped by a div with
 </p>
 </details>
 
-Add the following functionality: Clicking on a DogCard in the AdoptableDogs component adds it to FavoriteDogs component.
+1. Add the following functionality: Clicking on a DogCard in the AdoptableDogs component adds it to FavoriteDogs component.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -288,9 +288,6 @@ Add an onSubmit handler to the AddDogForm component. The onSubmit should referen
 
 ![AddDogForm.js](/readme-images/AddDogForm-submit-handleChange.png)
 
-</p>
-</details>
-
 <details>
 <summary>Why do we need event.preventDefault() in the submitHandler function?</summary>
 <p>
@@ -298,3 +295,8 @@ Add an onSubmit handler to the AddDogForm component. The onSubmit should referen
 This prevents the default submit action of reloading the webpage.
 </p>
 </details>
+
+</p>
+</details>
+
+
