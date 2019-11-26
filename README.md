@@ -246,17 +246,17 @@ Add onChange handlers to the AddDogForm component inputs that update local state
 Give first three inputs a value that references corresponding information AddDogForm state.
 
 <details>
-<summary>SHOW CODE</summary>
-<p>
-
-<details>
 <summary>What is a controlled form?</summary>
 <p>
 
-Controlled form: XXXXXXXXX
+Controlled forms: Input values are set to state values, then updated via events. For controlled inputs you will need a corresponding state and a method to update that state with changes. For more information: <https://medium.com/byte-sized-react/controlled-forms-in-react-68e59362a119>
 
 </p>
 </details>
+
+<details>
+<summary>SHOW CODE</summary>
+<p>
 
 ![AddDogForm.js](/readme-images/add-dog-form-1.png)
 
