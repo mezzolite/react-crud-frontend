@@ -15,6 +15,7 @@ const DogCard = (props) => {
                 <h4><b>{props.dog.name}</b></h4>
                 <p>Breed: {props.dog.breed}</p>
                 <p>Age: {props.dog.age}</p>
+                <button onClick={() => props.deleteDog(props.dog)}>DELETE</button>
             </div>
         </div>
 

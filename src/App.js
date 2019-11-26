@@ -73,6 +73,20 @@ class App extends React.Component {
       })
   }
 
+  deleteDog = dog => {
+    const id = dog.id
+    fetch(`https://dogs-backend.herokuapp.com/dogs/${id}`, {
+      method: "DELETE"
+    }).then(dog => {
+      const adoptableDogs = this.state.adoptableDogs.filter(adoptableDog => {
+        return adoptableDog !== dog
+      })
+      this.setState({
+        adoptableDogs
+      })
+    })
+  }
+
   render() {
     console.log("state", this.state.adoptableDogs)
     return (
@@ -88,6 +102,7 @@ class App extends React.Component {
         <AdoptableDogs
           dogAction={this.addDog}
           adoptableDogs={this.filteredDogs()}
+          deleteDog={this.deleteDog}
         />
         <AddDogForm
           addAdoptableDog={this.addAdoptableDog}

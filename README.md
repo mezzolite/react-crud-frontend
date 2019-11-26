@@ -76,7 +76,7 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-1. Set up all components as functional, put an h1 tag in each of them that contains the name of the component, then import App.js' child components
+Set up all components as functional, put an h1 tag in each of them that contains the name of the component, then import App.js' child components
 
 <details><summary>SHOW CODE</summary>
 <p>
@@ -87,7 +87,7 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-1. Put the name of the app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders on the screen.
+Put the name of the app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders on the screen.
 
 <details><summary>SHOW CODE</summary>
 <p>
@@ -97,7 +97,7 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-1. Pass state to AdoptableDogs component as props. Iterate through props in AdoptableDogs component to return an array of DogCard components. Give each dog card a key and a dog prop. Render DogCards in the Adoptable Dogs section in the browser.
+Pass state to AdoptableDogs component as props. Iterate through props in AdoptableDogs component to return an array of DogCard components. Give each dog card a key and a dog prop. Render DogCards in the Adoptable Dogs section in the browser.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -113,7 +113,7 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-1. Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
+Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -124,7 +124,7 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-1. Add the following functionality: Clicking on a DogCard in the AdoptableDogs component adds it to FavoriteDogs component.
+Add the following functionality: Clicking on a DogCard in the AdoptableDogs component adds it to FavoriteDogs component.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -233,7 +233,7 @@ In the App component, write a function called updateSearchTerm that takes in a s
 </p>
 </details>
 
-Create a form in AddDogForm that allows a user to add an adoptable dog to the list. It should have four inputs: 
+Create a controlled form in AddDogForm that allows a user to add an adoptable dog to the list. It should have four inputs: 
 * one for a dog's name,
 * one for a dog's breed,
 * one for a dog's age,
@@ -248,6 +248,15 @@ Give first three inputs a value that references corresponding information AddDog
 <details>
 <summary>SHOW CODE</summary>
 <p>
+
+<details>
+<summary>What is a controlled form?</summary>
+<p>
+
+Controlled form: XXXXXXXXX
+
+</p>
+</details>
 
 ![AddDogForm.js](/readme-images/add-dog-form-1.png)
 
@@ -299,4 +308,13 @@ This prevents the default submit action of reloading the webpage.
 </p>
 </details>
 
+Create a delete button in each DogCard component that calls a delete function in App.js
 
+<details>
+<summary>SEE CODE</summary>
+<p>
+
+![AddDogForm.js](/readme-images/AddDogForm-submit-handleChange.png)
+
+</p>
+</details>

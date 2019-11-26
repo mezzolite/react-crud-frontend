@@ -5,7 +5,7 @@ class AddDogForm extends Component {
         newDog: {
             name: "",
             breed: "",
-            age: undefined,
+            age: 0,
             image: ""
         }
     }
@@ -20,7 +20,7 @@ class AddDogForm extends Component {
             newDog: {
                 name: "",
                 breed: "",
-                age: undefined,
+                age: 0,
                 image: ""
             }
         })
