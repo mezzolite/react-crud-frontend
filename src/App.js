@@ -59,14 +59,13 @@ class App extends React.Component {
   }
 
   addAdoptableDog = dog => {
-    fetch(`${BASE_URL}/dogs`, {
+    fetch(BASE_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(dog),
-    })
-    .then(response => response.json())
+    }).then(response => response.json())
       .then(dog => {
         this.setState({
           adoptableDogs: [...this.state.adoptableDogs, dog]

@@ -5,20 +5,23 @@ class AddDogForm extends Component {
         newDog: {
             name: "",
             breed: "",
-            age: undefined
+            age: undefined,
+            image: ""
         }
     }
+
     submitHandler = event => {
         event.preventDefault()
-        const { name, breed, age } = this.state.newDog
+        const { name, breed, age, image } = this.state.newDog
 
-        this.props.submitHandler({ name, breed, age })
+        this.props.addAdoptableDog({ name, breed, age, image })
 
         this.setState({
             newDog: {
                 name: "",
                 breed: "",
-                age: null
+                age: undefined,
+                image: ""
             }
         })
     }
@@ -27,6 +30,7 @@ class AddDogForm extends Component {
         const newDog = this.state.newDog
         newDog[event.target.name] = event.target.value
         this.setState({ newDog })
+
     }
 
     render() {
@@ -56,6 +60,14 @@ class AddDogForm extends Component {
                     required
                     value={this.state.newDog.age}
                     placeholder="Age"
+                    onChange={this.handleChange}
+                />
+                <input
+                    name="image"
+                    type="text"
+                    required
+                    value={this.state.newDog.image}
+                    placeholder="Image"
                     onChange={this.handleChange}
                 />
 

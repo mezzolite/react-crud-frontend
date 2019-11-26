@@ -54,7 +54,7 @@ Refactor App.js from a functional to a class component, then initialize state in
 
 Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
 
-*Complete this and all steps before viewing code below.*
+*Do not view hidden code until you have completed the corresponding step(s).*
 
 <details>
 <summary>SHOW CODE</summary>
@@ -78,8 +78,6 @@ NEEDS EDITING!!!!!
 </details>
 
 Set up all components as functional, put an h1 tag in each of them that contains the name of the component, then import App.js' child components
-
-*Complete this and all steps before viewing code below.*
 
 <details><summary>SHOW CODE</summary>
 <p>
@@ -236,13 +234,17 @@ In the App component, write a function called updateSearchTerm that takes in a s
 </p>
 </details>
 
-Create a form in AddDogForm that allows a user to add an adoptable dog to the list. It should have four inputs: one for a dog's name, one for a dog's breed, one for a dog's age, and one with a type attribute assigned to "submit".
+Create a form in AddDogForm that allows a user to add an adoptable dog to the list. It should have four inputs: 
+* one for a dog's name,
+* one for a dog's breed,
+* one for a dog's age,
+* and one with a type attribute assigned to "submit".
 
 Refactor the AddDogForm component to hold a newDog object in state.
 
 Add onChange handlers to the AddDogForm component inputs that update local state.
 
-Give first three inputs a value that references corresponding information AddDogForm state. 
+Give first three inputs a value that references corresponding information AddDogForm state.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -253,14 +255,22 @@ Give first three inputs a value that references corresponding information AddDog
 </p>
 </details>
 
-In the appropriate component, add an addAdoptableDog function that POSTs form data to the backend. Pass as props to the appropriate component.
+In the appropriate component, add an addAdoptableDog function that POSTs form data to the backend. 
 
-Pass addAdoptableDog function as props to the appropriate component.
+Pass as props to the appropriate component.
+<details>
+<summary>SHOW CODE</summary>
+<p>
+
+![addAdoptableDog](/readme-images/addAdoptableDog_function.png)
+
+</p>
+</details>
 
 Add logic to addAdoptableDog function that pessimistically renders the new adoptable dog to the adoptable dog list.
 
 <details>
-<summary>What is *pessimistic rendering*?</summary>
+<summary>What is *pessimistic rendering* ?</summary>
 <p>
 
 Pessimistic rendering: The user interface (UI) updates AFTER the database is updated. In this case, we POST the new dog, then setState with the newly added dog so it displays in the UI.
@@ -278,5 +288,3 @@ Add an onSubmit handler to the AddDogForm component. The onSubmit should referen
 This prevents the default submit action of reloading the webpage.
 </p>
 </details>
-
-
