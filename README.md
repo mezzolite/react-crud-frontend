@@ -70,10 +70,9 @@ Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in s
 <details>
 <summary>SHOW ANSWER</summary>
 <p>
-componentDidMount is called once the component has been rendered in the browser. Fetching data within this lifecycle method ensure that data will not be loaded until after the initial render. 
 
+componentDidMount is called once the component has been rendered in the browser. Fetching data within this lifecycle method ensure that data will not be put into state until after the component has mounted.
 
-NEEDS EDITING!!!!! 
 </p>
 </details>
 
@@ -258,6 +257,7 @@ Give first three inputs a value that references corresponding information AddDog
 In the appropriate component, add an addAdoptableDog function that POSTs form data to the backend. 
 
 Pass as props to the appropriate component.
+
 <details>
 <summary>SHOW CODE</summary>
 <p>
@@ -283,8 +283,18 @@ The opposite is *optimistic rendering*, which renders the page with updated info
 Add an onSubmit handler to the AddDogForm component. The onSubmit should reference a submitHandler function that calls the addAdoptableDog function, then resets state to its original empty values.
 
 <details>
+<summary>SEE CODE</summary>
+<p>
+
+![AddDogForm.js](/readme-images/AddDogForm-submit-handleChange.png)
+
+</p>
+</details>
+
+<details>
 <summary>Why do we need event.preventDefault() in the submitHandler function?</summary>
 <p>
+
 This prevents the default submit action of reloading the webpage.
 </p>
 </details>
