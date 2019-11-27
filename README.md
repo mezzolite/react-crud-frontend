@@ -344,7 +344,7 @@ This prevents the default submit action of reloading the webpage.
 
 1. Create a delete button in each DogCard component that calls a delete function in App.js.
 
-2. The delete function should delete the selected dog from the backend.
+2. This function should delete a selected dog from the backend.
 
 3. Optimistically render the new array of adoptable dogs without the deleted dog.
 
