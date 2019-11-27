@@ -31,7 +31,7 @@
 <summary>SEE WIREFRAME</summary>
 <p>
 
-![App Wireframe Image](/readme-images/dog-adoption-app-wireframe.png)
+![App Wireframe Image](/readme-images/dog-adoption-app-wireframe.png=24x48)
 
 </p>
 </details>
@@ -51,7 +51,7 @@
 <details><summary>CLICK ME TO COMPARE APP TREE TO YOUR OWN</summary>
 <p>
 
-![App Structure Tree (header component omitted)](/readme-images/app-structure-tree.png)
+![App Structure Tree (header component omitted)](/readme-images/app-structure-tree.png=24x48)
 
 </p>
 </details>
