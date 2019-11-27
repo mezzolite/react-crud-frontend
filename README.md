@@ -356,3 +356,15 @@ This prevents the default submit action of reloading the webpage.
 
 </p>
 </details>
+
+## PART VIII ##
+
+1. Resolve all red and yellow errors in console.
+
+2. Ensure all app functionality is in place.
+
+3. Compare with solution branch code.
+
+4. Refactor, destructure, and reformat.
+
+5. Review code with a peer or coach.
