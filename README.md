@@ -365,6 +365,6 @@ This prevents the default submit action of reloading the webpage.
 
 3. Compare with solution branch code.
 
-4. Refactor, destructure, and reformat.
+4. Refactor and destructure as needed.
 
 5. Review code with a peer or coach.
