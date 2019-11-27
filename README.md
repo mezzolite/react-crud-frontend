@@ -51,7 +51,7 @@
 <details><summary>CLICK ME TO COMPARE APP TREE TO YOUR OWN</summary>
 <p>
 
-![App Structure Tree (header component omitted)](/readme-images/app-structure-tree.png | width=48)
+![App Structure Tree (header component omitted)](/readme-images/app-structure-tree.png)
 
 </p>
 </details>
