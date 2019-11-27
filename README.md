@@ -1,6 +1,6 @@
 # React Practice Project #
 
-**As a software engineering educator, I have noticed that many students have difficulty understanding React app structure, passing state as props, implementing reusable components, as well as implementing CRUD functionality in React apps.**
+**As a software engineering educator, I have noticed that many students have difficulty understanding React app structure, passing state as props, implementing reusable components and controlled forms, as well as implementing CRUD functionality in React apps.**
 
 **This project guides React developers-in-training through the process of building an app that requires:**
 
