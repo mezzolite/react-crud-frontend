@@ -24,11 +24,13 @@ class App extends React.Component {
 
   addDog = dog => {
     const dogIds = this.state.favoriteDogs.map(favorite => favorite.id)
+
     if (!dogIds.includes(dog.id)) {
       this.setState({
         favoriteDogs: [...this.state.favoriteDogs, dog]
       })
     }
+    
   }
 
   removeDog = dog => {

@@ -97,9 +97,17 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
+5. If you haven't already, start your app in the browser and make sure all components render without errors.
+
 **PART II**
 
-1. Pass state to AdoptableDogs component as props. Iterate through props in AdoptableDogs component to return an array of DogCard components. Give each dog card a key and a dog prop. Render DogCards in the Adoptable Dogs section in the browser.
+1. Pass state to AdoptableDogs component as props. 
+
+2. Iterate through props in AdoptableDogs component to return an array of DogCard components. 
+
+3. Give each dog card a key and a dog prop.
+
+4. Render DogCards in the Adoptable Dogs section in the browser.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -121,9 +129,9 @@ Data is passed from a component higher in the app hierarchy to a child component
 </p>
 </details>
 
-2. Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". 
+5. Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". 
 
-3. The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
+6. The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -170,7 +178,7 @@ Data is passed from a component higher in the app hierarchy to a child component
 <details><summary>SHOW CODE</summary>
 <p>
 
-![Pass Props to AdoptableDogs.js](/readme-images/dog-card-component.png)
+![addDog-fn](/readme-images/addDog-filter.png)
 
 </p>
 </details>
