@@ -30,7 +30,6 @@ class AddDogForm extends Component {
         const { newDog } = this.state
         newDog[event.target.name] = event.target.value
         this.setState({ newDog })
-
     }
 
     render() {

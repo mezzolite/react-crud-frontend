@@ -2,6 +2,7 @@
 import React from "react"
 
 const SearchBar = (props) => {
+
     const updateSearchTerm = event => {
         props.updateSearchTerm(event.target.value)
     }

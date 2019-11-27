@@ -10,6 +10,7 @@ import AddDogForm from './components/AddDogForm'
 const BASE_URL = `https://dogs-backend.herokuapp.com/dogs`
 
 class App extends React.Component {
+
   state = {
     adoptableDogs: [],
     favoriteDogs: [],
@@ -30,11 +31,14 @@ class App extends React.Component {
         favoriteDogs: [...this.state.favoriteDogs, dog]
       })
     }
-    
+
   }
 
   removeDog = dog => {
-    const newFavorites = this.state.favoriteDogs.filter(favorite => favorite.id !== dog.id)
+    const newFavorites = this.state.favoriteDogs.filter(favorite => {
+      return favorite.id !== dog.id
+    })
+
     this.setState({
       favoriteDogs: newFavorites
     })
@@ -45,19 +49,22 @@ class App extends React.Component {
   }
 
   filteredDogs = () => {
-    return this.state.adoptableDogs.filter(dog => {
+    const { adoptableDogs, searchTerm } = this.state
+
+    return adoptableDogs.filter(dog => {
       return (dog.breed
         .toLowerCase()
-        .includes(this.state.searchTerm)
+        .includes(searchTerm)
       ) || (dog.name
         .toLowerCase()
-        .includes(this.state.searchTerm)
+        .includes(searchTerm)
         )
         || (dog.age
           .toString()
-          .includes(this.state.searchTerm)
+          .includes(searchTerm)
         )
     })
+
   }
 
   addAdoptableDog = dog => {
@@ -89,25 +96,31 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("state", this.state.adoptableDogs)
     return (
       <div className="App">
         <Header />
+
         <FavoriteDogs
           dogAction={this.removeDog}
           favoriteDogs={this.state.favoriteDogs}
+          deleteDog={this.deleteDog}
         />
+
         <SearchBar
           searchTerm={this.state.searchTerm}
-          updateSearchTerm={this.updateSearchTerm} />
+          updateSearchTerm={this.updateSearchTerm}
+        />
+
         <AdoptableDogs
           dogAction={this.addDog}
           adoptableDogs={this.filteredDogs()}
           deleteDog={this.deleteDog}
         />
+
         <AddDogForm
           addAdoptableDog={this.addAdoptableDog}
         />
+
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react'
 
 const DogCard = (props) => {
     const { dog } = props
+
     const handleClick = () => {
         props.dogAction(dog)
     }
@@ -11,8 +12,7 @@ const DogCard = (props) => {
     }
 
     return (
-        <div
-            className="dog-card"
+        <div className="dog-card"
             onClick={handleClick}
         >
             <img src={dog.image} alt={dog.name} />
