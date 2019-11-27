@@ -191,7 +191,13 @@ Data is passed from a component higher in the app hierarchy to a child component
 <summary>SHOW CODE</summary>
 <p>
 
-*Did you know that you can give two different props the same name even if they reference different functions!? This increases the reusability of components!*
+<details><summary>TRUE / FALSE: Two different functions can be given the same prop name when passed to child components.</summary>
+<p>
+
+TRUE: You can give two different props the same name even if they reference different functions. This increases the reusability of components!
+
+</p>
+</details>
 
 <ol>
 
