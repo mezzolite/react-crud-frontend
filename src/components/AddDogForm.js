@@ -27,13 +27,15 @@ class AddDogForm extends Component {
     }
 
     handleChange = event => {
-        const newDog = this.state.newDog
+        const { newDog } = this.state
         newDog[event.target.name] = event.target.value
         this.setState({ newDog })
 
     }
 
     render() {
+        const { name, breed, age, image } = this.state.newDog
+
         return (
             <form className="add-dog-form"
                 onSubmit={this.submitHandler}
@@ -43,7 +45,7 @@ class AddDogForm extends Component {
                     name="name"
                     type="text"
                     required
-                    value={this.state.newDog.name}
+                    value={name}
                     placeholder="Name"
                     onChange={this.handleChange}
                 />
@@ -51,7 +53,7 @@ class AddDogForm extends Component {
                     name="breed"
                     type="text"
                     required
-                    value={this.state.newDog.breed}
+                    value={breed}
                     placeholder="Breed"
                     onChange={this.handleChange}
                 />
@@ -59,7 +61,7 @@ class AddDogForm extends Component {
                     name="age"
                     type="number"
                     required
-                    value={this.state.newDog.age}
+                    value={age}
                     placeholder="Age"
                     onChange={this.handleChange}
                 />
@@ -67,7 +69,7 @@ class AddDogForm extends Component {
                     name="image"
                     type="text"
                     required
-                    value={this.state.newDog.image}
+                    value={image}
                     placeholder="Image"
                     onChange={this.handleChange}
                 />

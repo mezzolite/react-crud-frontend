@@ -295,9 +295,7 @@ Controlled forms: Input values are set to state values, then updated via events.
 </p>
 </details>
 
-5. In the appropriate component, add an addAdoptableDog function that POSTs form data to the backend. 
-
-6. Pass as props to the appropriate component.
+5. In the appropriate component, add an addAdoptableDog function that POSTs form data to the backend.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -307,6 +305,8 @@ Controlled forms: Input values are set to state values, then updated via events.
 
 </p>
 </details>
+
+6. Pass as props to the appropriate component.
 
 7. Add logic to addAdoptableDog function that pessimistically renders the new adoptable dog to the adoptable dog list.
 
