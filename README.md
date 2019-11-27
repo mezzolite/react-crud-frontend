@@ -363,8 +363,6 @@ This prevents the default submit action of reloading the webpage.
 
 2. Ensure all app functionality is in place.
 
-3. Compare with solution branch code.
+3. Refactor and destructure.
 
-4. Refactor and destructure as needed.
-
-5. Review code with a peer or coach.
+4. Review code with a peer or coach. If no one is available, compare with solution code.
