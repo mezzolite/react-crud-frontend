@@ -50,13 +50,13 @@
 
 ## Instructions to Complete Dog Adoption Central ##
 
+*Do not view hidden code / answers to questions until you have attempted to complete the corresponding step(s).*
+
 **PART I**
 
 1. Refactor App.js from a functional to a class component, then initialize state in the App.js component.
 
-2. Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
-
-*Do not view hidden code until you have completed the corresponding step(s).*
+2. Fetch data from `https://dogs-backend.herokuapp.com/dogs` and put returned data in state.
 
 <details>
 <summary>SHOW CODE</summary>
