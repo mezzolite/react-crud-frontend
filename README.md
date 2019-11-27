@@ -1,12 +1,13 @@
 # React Practice Project #
 
-**As a software engineering educator, I have noticed that many students have difficulty understanding React app structure, passing state as props, implementing reusable components, as well as implementing CRUD functionality in React apps.**
+**As a software engineering educator, I have noticed that many students have difficulty understanding React app structure, passing state as props, implementing reusable components and controlled forms, as well as implementing CRUD functionality in React apps.**
 
 **This project guides React developers-in-training through the process of building an app that requires:**
 
 * Multiple, hierarchically structured components
 * GET, POST, and DELETE functionality
-* Form submission
+* A controlled form / form submission
+* Optimistic and pessimistic rendering
 * Prop drilling
 * Component reusability
 
@@ -16,7 +17,8 @@
 
 * "Favorite" dogs by clicking them and adding them to a favorites list component at the top of the page
   * A particular dog can only be added to the favorites list one time (no duplicates)
-  * Remove dogs from favorites list by clicking on the dog card
+
+* Remove dogs from favorites list by clicking on the dog card
 
 * Search for dogs by breed
 
@@ -26,7 +28,14 @@
 
 **Wireframe for Dog Adoption Central:**
 
+<details>
+<summary>SEE WIREFRAME</summary>
+<p>
+
 ![App Wireframe Image](/readme-images/dog-adoption-app-wireframe.png)
+
+</p>
+</details>
 
 **Dog Adoption Central Component List**
 
@@ -43,7 +52,21 @@
 <details><summary>CLICK ME TO COMPARE APP TREE TO YOUR OWN</summary>
 <p>
 
-![App Structure Tree (header component omitted)](/readme-images/app-structure-tree.png)
+<details><summary>Where is state typically held?</summary>
+<p>
+
+In the highest common component.
+
+In the case of this app, App.js will hold state, as it is the parent to the other components who need access to data in state as props.
+
+Keep in mind: not all apps need to hold state in App.js. An app's individual component structure dictates where the single source of truth should live.
+
+In larger apps, state management tools such as Redux are used as state containers.
+
+</p>
+</details>
+
+![App Structure Tree](/readme-images/app-structure-tree.png)
 
 </p>
 </details>
@@ -55,6 +78,17 @@
 ## PART I ##
 
 1. Refactor App.js from a functional to a class component, then initialize state in the App.js component.
+
+<details>
+<summary>Why did we refactor App.js into a class component before initializing state?</summary>
+<p>
+
+Stateful components must be class components.
+
+*FYI: React hooks, a new feature offered by Facebook's React team, allow developers to create functional components that hold state. Don't worry about using hooks for now, as they will not be used in this tutorial, nor in future student projects.*
+
+</p>
+</details>
 
 2. Fetch data from `https://dogs-backend.herokuapp.com/dogs` and put returned data in state.
 
@@ -87,7 +121,7 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-4. Put the name of the app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders on the screen.
+4. Put the name of this app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders in the UI.
 
 <details><summary>SHOW CODE</summary>
 <p>
@@ -101,9 +135,9 @@ componentDidMount is called once the component has been rendered in the browser.
 
 ## PART II ##
 
-1. Pass state to AdoptableDogs component as props. 
+1. Pass state to AdoptableDogs component as props.
 
-2. Iterate through props in AdoptableDogs component to return an array of DogCard components. 
+2. Iterate through props in AdoptableDogs component to return an array of DogCard components.
 
 3. Give each dog card a key and a dog prop.
 
@@ -356,3 +390,13 @@ This prevents the default submit action of reloading the webpage.
 
 </p>
 </details>
+
+## PART VIII ##
+
+1. Resolve all red and yellow errors in console.
+
+2. Ensure all app functionality is in place.
+
+3. Refactor and destructure.
+
+4. Review code with a peer or coach. If no one is available, compare with solution code.
