@@ -120,7 +120,7 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-4. Put the name of the app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders on the screen.
+4. Put the name of this app in an h1 tag in the Header component. Give it a className of "header". Make sure it renders in the UI.
 
 <details><summary>SHOW CODE</summary>
 <p>
@@ -134,9 +134,9 @@ componentDidMount is called once the component has been rendered in the browser.
 
 ## PART II ##
 
-1. Pass state to AdoptableDogs component as props. 
+1. Pass state to AdoptableDogs component as props.
 
-2. Iterate through props in AdoptableDogs component to return an array of DogCard components. 
+2. Iterate through props in AdoptableDogs component to return an array of DogCard components.
 
 3. Give each dog card a key and a dog prop.
 
