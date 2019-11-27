@@ -62,10 +62,8 @@
 <summary>SHOW CODE</summary>
 <p>
 
-*Why is the GET request inside the ComponentDidMount() lifecycle method? Use React docs and google to answer this question.*
-
 <details>
-<summary>SHOW ANSWER</summary>
+<summary>*Why is the GET request inside the ComponentDidMount() lifecycle method? Use React docs and google to answer this question.*</summary>
 <p>
 
 componentDidMount is called once the component has been rendered in the browser. Fetching data within this lifecycle method ensure that data will not be put into state until after the component has mounted.
