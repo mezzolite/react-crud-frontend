@@ -52,7 +52,7 @@
 
 *Do not view hidden code / answers to questions until you have attempted to complete the corresponding step(s).*
 
-**PART I**
+## PART I ##
 
 1. Refactor App.js from a functional to a class component, then initialize state in the App.js component.
 
@@ -99,7 +99,7 @@ componentDidMount is called once the component has been rendered in the browser.
 
 5. If you haven't already, start your app in the browser and make sure all components render without errors.
 
-**PART II**
+## PART II ##
 
 1. Pass state to AdoptableDogs component as props. 
 
@@ -142,7 +142,7 @@ Data is passed from a component higher in the app hierarchy to a child component
 </p>
 </details>
 
-**PART III**
+## PART III ## 
 
 1. Add the following functionality: Clicking on a DogCard in the AdoptableDogs component adds it to FavoriteDogs component.
 
@@ -183,7 +183,7 @@ Data is passed from a component higher in the app hierarchy to a child component
 </p>
 </details>
 
-**PART IV**
+## PART IV ##
 
 1. Add the following functionality: Clicking on a DogCard in the FavoriteDogs removes it from that component.
 
@@ -218,7 +218,7 @@ TRUE: You can give two different props the same name even if they reference diff
 </p>
 </details>
 
-**PART V**
+## PART V ##
 
 1. Add functionality to SearchBar component: Typing in a form allows user to search by breed.
 
@@ -263,7 +263,7 @@ In the App component, write a function called updateSearchTerm that takes in a s
 </p>
 </details>
 
-**PART VI**
+## PART VI ##
 
 1. Create a controlled form in AddDogForm that allows a user to add an adoptable dog to the list. It should have four inputs:
 * one for a dog's name,
@@ -340,7 +340,7 @@ This prevents the default submit action of reloading the webpage.
 </p>
 </details>
 
-**PART VII**
+## PART VII ##
 
 1. Create a delete button in each DogCard component that calls a delete function in App.js.
 
