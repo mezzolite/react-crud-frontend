@@ -63,7 +63,7 @@
 <p>
 
 <details>
-<summary>*Why is the GET request inside the ComponentDidMount() lifecycle method? Use React docs and google to answer this question.*</summary>
+<summary>Why is the GET request inside the ComponentDidMount() lifecycle method? Use React docs and google to answer this question.</summary>
 <p>
 
 componentDidMount is called once the component has been rendered in the browser. Fetching data within this lifecycle method ensure that data will not be put into state until after the component has mounted.
@@ -105,9 +105,15 @@ componentDidMount is called once the component has been rendered in the browser.
 <summary>SHOW CODE</summary>
 <p>
 
-*Passing props from App, to AdoptableDogs, to DogCard is called prop drilling:*
+<details><summary>What is prop drilling?</summary>
+<p>
 
-*Data is passed from a component higher in the app hierarchy to a child component further down. It allows access to state at different levels of the component hierarchy.*
+Passing props from App, to AdoptableDogs, to DogCard is called prop drilling:
+
+Data is passed from a component higher in the app hierarchy to a child component further down. It allows access to state at different levels of the component hierarchy.
+
+</p>
+</details>
 
 ![Pass Props to AdoptableDogs.js](/readme-images/pass-props-adoptabledogs.png)
 ![AdoptableDogs.js w/ Map](/readme-images/adoptable-dogs-component.png)
@@ -115,7 +121,9 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-2. Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
+2. Create an HTML card in the DogCard component. It should be wrapped by a div with the className "dog-card". The dog-card div should have two children: (1) An img tag that displays the dog's image and (2) a div with the className "dog-specs". 
+
+3. The dog-specs div has two children: (1) h4 tag that displays the dog's name and (2) a p tag that displays the dog's breed.
 
 <details>
 <summary>SHOW CODE</summary>
@@ -249,12 +257,6 @@ In the App component, write a function called updateSearchTerm that takes in a s
 * one for a dog's age,
 * and one with a type attribute assigned to "submit".
 
-2. Refactor the AddDogForm component to hold a newDog object in state.
-
-3. Add onChange handlers to the AddDogForm component inputs that update local state.
-
-4. Give first three inputs a value that references corresponding information AddDogForm state.
-
 <details>
 <summary>What is a controlled form?</summary>
 <p>
@@ -263,6 +265,12 @@ Controlled forms: Input values are set to state values, then updated via events.
 
 </p>
 </details>
+
+2. Refactor the AddDogForm component to hold a newDog object in state.
+
+3. Add onChange handlers to the AddDogForm component inputs that update local state.
+
+4. Give first three inputs a value that references corresponding information AddDogForm state.
 
 <details>
 <summary>SHOW CODE</summary>
