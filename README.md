@@ -50,9 +50,9 @@
 
 ## Instructions to Complete Dog Adoption Central ##
 
-1. Refactor App.js from a functional to a class component, then initialize state in the App.js component.
+Refactor App.js from a functional to a class component, then initialize state in the App.js component.
 
-1. Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
+Fetch data from `https://dogs-backend.herokuapp.com/dogs` put returned data in state.
 
 *Do not view hidden code until you have completed the corresponding step(s).*
 
@@ -308,13 +308,17 @@ This prevents the default submit action of reloading the webpage.
 </p>
 </details>
 
-Create a delete button in each DogCard component that calls a delete function in App.js
+Create a delete button in each DogCard component that calls a delete function in App.js.
+
+The delete function should delete the selected dog from the backend.
+
+Optimistically render the new array of adoptable dogs without the deleted dog.
 
 <details>
 <summary>SEE CODE</summary>
 <p>
 
-![AddDogForm.js](/readme-images/AddDogForm-submit-handleChange.png)
+![App.js](/readme-images/deleteDog-fn.png)
 
 </p>
 </details>

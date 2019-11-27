@@ -75,15 +75,14 @@ class App extends React.Component {
 
   deleteDog = dog => {
     const id = dog.id
-    fetch(`https://dogs-backend.herokuapp.com/dogs/${id}`, {
+
+    const adoptableDogs = this.state.adoptableDogs.filter(adoptableDog => {
+      return adoptableDog !== dog
+    })
+
+    this.setState({ adoptableDogs })
+    fetch(`${BASE_URL}/${id}`, {
       method: "DELETE"
-    }).then(dog => {
-      const adoptableDogs = this.state.adoptableDogs.filter(adoptableDog => {
-        return adoptableDog !== dog
-      })
-      this.setState({
-        adoptableDogs
-      })
     })
   }
 

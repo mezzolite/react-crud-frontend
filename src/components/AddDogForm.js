@@ -38,6 +38,7 @@ class AddDogForm extends Component {
             <form className="add-dog-form"
                 onSubmit={this.submitHandler}
             >
+                <h1>Add An Adoptable Dog:</h1>
                 <input
                     name="name"
                     type="text"

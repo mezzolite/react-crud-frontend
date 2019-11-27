@@ -74,3 +74,24 @@ img {
 .dog-specs, .dog-specs p, .dog-specs h4 {
   padding: 2px 16px;
 }
+
+button {
+  background-color: #eaf1f8;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+}
+
+.add-dog-form input {
+  border: solid;
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
