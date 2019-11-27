@@ -26,7 +26,14 @@
 
 **Wireframe for Dog Adoption Central:**
 
+<details>
+<summary>SEE WIREFRAME</summary>
+<p>
+
 ![App Wireframe Image](/readme-images/dog-adoption-app-wireframe.png)
+
+</p>
+</details>
 
 **Dog Adoption Central Component List**
 
