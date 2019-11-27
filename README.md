@@ -62,11 +62,6 @@
 <summary>SHOW CODE</summary>
 <p>
 
-![App.js w/ GET request](/readme-images/app-image.png)
-
-</p>
-</details>
-
 *Why is the GET request inside the ComponentDidMount() lifecycle method? Use React docs and google to answer this question.*
 
 <details>
@@ -74,6 +69,11 @@
 <p>
 
 componentDidMount is called once the component has been rendered in the browser. Fetching data within this lifecycle method ensure that data will not be put into state until after the component has mounted.
+
+</p>
+</details>
+
+![App.js w/ GET request](/readme-images/app-image.png)
 
 </p>
 </details>
