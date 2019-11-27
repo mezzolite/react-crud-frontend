@@ -66,7 +66,7 @@ In larger apps, state management tools such as Redux are used as state container
 </p>
 </details>
 
-![App Structure Tree (header component omitted)](/readme-images/app-structure-tree.png)
+![App Structure Tree](/readme-images/app-structure-tree.png)
 
 </p>
 </details>
