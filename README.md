@@ -16,7 +16,8 @@
 
 * "Favorite" dogs by clicking them and adding them to a favorites list component at the top of the page
   * A particular dog can only be added to the favorites list one time (no duplicates)
-  * Remove dogs from favorites list by clicking on the dog card
+
+* Remove dogs from favorites list by clicking on the dog card
 
 * Search for dogs by breed
 
