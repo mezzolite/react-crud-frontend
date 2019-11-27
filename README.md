@@ -59,7 +59,7 @@ In the highest common component.
 
 In the case of this app, App.js will hold state, as it is the parent to the other components that need access to data in state as props.
 
-Keep in mind: Not all apps need to hold state in App.js. An app's individual component structure dictates where the single source of truth should live.
+Keep in mind: Not all apps need to hold state in App.js. An app's unique component structure dictates where the single source of truth should live.
 
 In larger apps, state management tools such as Redux are used as state containers.
 
