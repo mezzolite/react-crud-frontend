@@ -297,15 +297,6 @@ Controlled forms: Input values are set to state values, then updated via events.
 
 5. In the appropriate component, add an addAdoptableDog function that POSTs form data to the backend.
 
-<details>
-<summary>SHOW CODE</summary>
-<p>
-
-![addAdoptableDog](/readme-images/addAdoptableDog_function.png)
-
-</p>
-</details>
-
 6. Pass as props to the appropriate component.
 
 7. Add logic to addAdoptableDog function that pessimistically renders the new adoptable dog to the adoptable dog list.
@@ -317,6 +308,15 @@ Controlled forms: Input values are set to state values, then updated via events.
 Pessimistic rendering: The user interface (UI) updates AFTER the database is updated. In this case, we POST the new dog, then setState with the newly added dog so it displays in the UI.
 
 The opposite is *optimistic rendering*, which renders the page with updated information BEFORE you update the database.
+
+</p>
+</details>
+
+<details>
+<summary>SHOW CODE</summary>
+<p>
+
+![addAdoptableDog](/readme-images/addAdoptableDog_function.png)
 
 </p>
 </details>
