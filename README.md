@@ -54,7 +54,11 @@
 <details><summary>Where is state typically held?</summary>
 <p>
 
-In the highest common component. In the case of this app, App.js will hold state, as it is the parent to the other components who need access to data in state as props. Keep in mind: not all apps need to hold state in App.js. An app's individual component structure dictates where the single source of truth should live.
+In the highest common component.
+
+In the case of this app, App.js will hold state, as it is the parent to the other components who need access to data in state as props.
+
+Keep in mind: not all apps need to hold state in App.js. An app's individual component structure dictates where the single source of truth should live.
 
 In larger apps, state management tools such as Redux are used as state containers.
 
@@ -73,6 +77,17 @@ In larger apps, state management tools such as Redux are used as state container
 ## PART I ##
 
 1. Refactor App.js from a functional to a class component, then initialize state in the App.js component.
+
+<details>
+<summary>Why did we refactor App.js into a class component before initializing state?</summary>
+<p>
+
+Stateful components must be class components.
+
+*FYI: React hooks, a new feature offered by Facebook's React team, allow developers to create functional components that hold state. Don't worry about using hooks for now, as they will not be used in this tutorial, nor in future student projects.*
+
+</p>
+</details>
 
 2. Fetch data from `https://dogs-backend.herokuapp.com/dogs` and put returned data in state.
 
