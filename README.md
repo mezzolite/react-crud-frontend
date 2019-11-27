@@ -51,7 +51,7 @@
 <details><summary>CLICK ME TO COMPARE APP TREE TO YOUR OWN</summary>
 <p>
 
-![App Structure Tree (header component omitted)](/readme-images/app-structure-tree.png)
+![App Structure Tree (header component omitted)](/readme-images/app-structure-tree.png =24x48)
 
 </p>
 </details>
@@ -79,7 +79,7 @@ componentDidMount is called once the component has been rendered in the browser.
 </p>
 </details>
 
-![App.js w/ GET request](/readme-images/app-image.png)
+![App.js w/ GET request](/readme-images/app-image.png =24x48)
 
 </p>
 </details>
