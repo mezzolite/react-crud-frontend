@@ -7,6 +7,7 @@
 * Multiple, hierarchically structured components
 * GET, POST, and DELETE functionality
 * A controlled form / form submission
+* Optimistic and pessimistic rendering
 * Prop drilling
 * Component reusability
 
